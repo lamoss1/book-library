@@ -1,0 +1,33 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node scripts/create-database.js",
+    "start": "nodemon -r dotenv/config index.js",
+    "pretest": "node scripts/create-database.js test",
+    "test": "mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js",
+    "posttest": "node scripts/drop-database.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamoss1/book-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamoss1/book-library/issues"
+  },
+  "homepage": "https://github.com/lamoss1/book-library#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.21",
+    "pg": "^8.9.0",
+    "sequelize": "^6.29.0",
+    "supertest": "^6.3.3"
+  }
+}
