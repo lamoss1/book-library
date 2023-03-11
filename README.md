@@ -1,6 +1,6 @@
 ## Project title
 
-Book library - an exercise of Sequelize Model. Sequelize can perform **CRUD** operations in relational database (postgres SQL). And Sequelize can perform foreign key association with tables.
+Book library - an exercise of Sequelize Models. Sequelize can perform **CRUD** operations within relational databases (I used PostgresSQL); it can also perform foreign key associations with tables.
 
 ### User Stories
 
